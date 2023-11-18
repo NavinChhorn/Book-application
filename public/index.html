@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>bookList</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="js/script.js" defer></script>
+</head>
+<body>
+
+	<div id="wrapper" style="display:block">
+		<header>
+			<div id="page-banner">
+				<h1 class="title">BookSelf</h1>
+				<p>Books for yourself</p>
+				<form action="" id="search-books">
+					<input type="text"  placeholder="Search Book...">
+				</form>
+			</div>
+		</header>
+		<form action="" id="add-book">
+			<input type="text" id="add" placeholder="Add a book...">
+			<button id="addnew">+ Add</button>
+		</form>
+		<div id="book-list">
+			<h2 class="title">Books to read</h2>
+			<ul></ul>
+		</div>
+	</div>
+	<div class="dialog" style="display:none">
+		<input id='nameBook' type="text" value="hello">
+		<div class="btn">
+			<button class="cancel">Cancel</button>
+			<button class="save"> Save</button>
+		</div>
+	</div>
+</body>
+</html>
